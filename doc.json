@@ -1,0 +1,31 @@
+{
+  "name": "sudoku",
+  "description": "Generates sudoku",
+  "author": "cake",
+    "config": {
+    "host-only": {
+      "description": "Whether eval is available to the host only",
+      "type": "boolean",
+      "default": true
+    },
+    "authorized": {
+      "description": "Comma separated list of authorized usernames",
+      "type": "string",
+      "default": ""
+    }
+  },
+  "commands": [
+    {
+      "name": "!sudoku",
+      "description": "Generate a sudoku of variable difficulty",
+      "example": "!sudoku hard",
+      "args": [
+        {
+          "name": "difficulty",
+          "description": "<code>easy</>, <code>medium</>, <code>hard</>, or <code>very hard</>",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

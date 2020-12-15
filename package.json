@@ -1,0 +1,14 @@
+{
+  "name": "omegga-sudoku",
+  "version": "0.0.1",
+  "description": "Generate sudokus in brickadia",
+  "main": "omegga.plugin.js",
+  "scripts": {
+    "test": "omegga"
+  },
+  "author": "cake",
+  "license": "ISC",
+  "dependencies": {
+    "brs-js": "^1.2.6"
+  }
+}
