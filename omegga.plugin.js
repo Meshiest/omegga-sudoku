@@ -32,9 +32,10 @@ class SudokuPlugin {
   }
 
   async cmdSudoku(name, ...args) {
+    const player = Omegga.getPlayer(name);
     if (
-      this.config['host-only'] && !this.omegga.getPlayer(name).isHost() &&
-      !this.config['authorized'].split(',').includes(name)
+      this.config['only-authorized'] && !player.isHost() &&
+      !this.config['authorized-users'].some(p => player.id === p.id)
     ) return;
 
     if (!this.cooldown(name)) return;
