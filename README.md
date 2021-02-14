@@ -6,6 +6,10 @@ To play, duplicate the numbers on the right to the board. Feel free to remove th
 
 ## Install
 
+Easy: `omegga install gh:Meshiest/sudoku`
+
+Manual:
+
 * `git clone https://github.com/meshiest/omegga-sudoku sudoku` in `plugins` directory
 * `npm i` in `sudoku` directory
 
